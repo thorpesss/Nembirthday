@@ -1,0 +1,314 @@
+
+<style>
+    .spa-suite-page * {
+        box-sizing: border-box;
+    }
+
+    .spa-suite-page {
+        font-family: 'Georgia', serif;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .spa-header {
+        background-color: #2c5f4f;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .spa-header h1 {
+        font-size: 2.5em;
+        font-weight: normal;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+
+    .spa-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .spa-hero {
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .spa-hero-image {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        margin: 0 auto 30px;
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    .spa-hero h2 {
+        font-size: 3em;
+        font-weight: normal;
+        color: #2c5f4f;
+        text-transform: lowercase;
+        margin-bottom: 20px;
+    }
+
+    .spa-subtitle {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #2c5f4f;
+    }
+
+    .spa-description {
+        font-size: 1.1em;
+        line-height: 1.8;
+        margin-bottom: 30px;
+        text-align: center;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .spa-features {
+        background-color: white;
+        padding: 40px;
+        border-radius: 8px;
+        margin: 40px 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .spa-features h3 {
+        font-size: 2em;
+        margin-bottom: 30px;
+        color: #2c5f4f;
+        text-align: center;
+    }
+
+    .spa-features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .spa-feature-item {
+        padding: 15px;
+        background-color: #f9f7f4;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .spa-feature-item:before {
+        content: "✓";
+        color: #2c5f4f;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-right: 10px;
+    }
+
+    .spa-gallery {
+        margin: 40px 0;
+    }
+
+    .spa-gallery h3 {
+        font-size: 2em;
+        margin-bottom: 30px;
+        color: #2c5f4f;
+        text-align: center;
+    }
+
+    .spa-gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .spa-gallery-item {
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .spa-gallery-item img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .spa-floorplan {
+        background-color: white;
+        padding: 40px;
+        border-radius: 8px;
+        margin: 40px 0;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .spa-floorplan h3 {
+        font-size: 2em;
+        margin-bottom: 30px;
+        color: #2c5f4f;
+    }
+
+    .spa-floorplan img {
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .spa-special-stay {
+        background-color: #e8e3db;
+        padding: 40px;
+        border-radius: 8px;
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    .spa-special-stay h3 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #2c5f4f;
+    }
+
+    .spa-special-stay p {
+        font-size: 1.1em;
+        line-height: 1.8;
+    }
+
+    .spa-footer {
+        background-color: #2c5f4f;
+        color: white;
+        padding: 40px 20px;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .spa-footer h2 {
+        margin-bottom: 20px;
+    }
+
+    .spa-footer-info {
+        margin: 20px 0;
+    }
+
+    .spa-footer-info p {
+        margin: 10px 0;
+    }
+
+    /* Remove any pointer cursor since links are disabled */
+    .spa-suite-page * {
+        cursor: default !important;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .spa-hero h2 {
+            font-size: 2em;
+        }
+
+        .spa-subtitle {
+            font-size: 1.2em;
+        }
+
+        .spa-features-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .spa-gallery-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<div class="spa-suite-page">
+    <div class="spa-header">
+        <h1>THE PIGS</h1>
+    </div>
+
+    <div class="spa-container">
+        <div class="spa-hero">
+            <img src="https://www.thepigs.org.uk/sites/default/files/2024-12/original-spa-room-portrait.jpg" alt="Spa Suite" class="spa-hero-image">
+            <h2>spa suite</h2>
+            <p class="spa-subtitle">Unforgettable spa staycation</p>
+        </div>
+
+        <div class="spa-description">
+            <p>
+                Our spa suites are the ultimate couples-focused suite for your staycation.
+                They combine a private steam room, sauna, drench bucket and drench shower
+                with a dual-bathing bathtub. Each spa suite also comes with a private
+                courtyard complete with fire pit. Your complimentary brunch is included
+                each morning.
+            </p>
+        </div>
+
+        <div class="spa-features">
+            <h3>Suite Features</h3>
+            <div class="spa-features-grid">
+                <div class="spa-feature-item">Drench shower</div>
+                <div class="spa-feature-item">Private sauna</div>
+                <div class="spa-feature-item">Private steam room</div>
+                <div class="spa-feature-item">Courtyard garden with seating and firepit</div>
+                <div class="spa-feature-item">Dual-bathing bathtub</div>
+                <div class="spa-feature-item">Bathrobes & slippers</div>
+                <div class="spa-feature-item">Brunch included - hot and cold options</div>
+                <div class="spa-feature-item">Mini-fridge</div>
+                <div class="spa-feature-item">Heating / Air-conditioning</div>
+                <div class="spa-feature-item">Tea & coffee facilities</div>
+                <div class="spa-feature-item">Pocket-sprung mattress</div>
+            </div>
+        </div>
+
+        <div class="spa-gallery">
+            <h3>Spa Suite Gallery</h3>
+            <div class="spa-gallery-grid">
+                <div class="spa-gallery-item">
+                    <img src="https://www.thepigs.org.uk/sites/default/files/2024-11/spa-suite-full.webp" alt="Spa Suite Interior">
+                </div>
+                <div class="spa-gallery-item">
+                    <img src="https://www.thepigs.org.uk/sites/default/files/2024-12/suite%202.webp" alt="Suite Room 2">
+                </div>
+                <div class="spa-gallery-item">
+                    <img src="https://www.thepigs.org.uk/sites/default/files/2024-12/suite%203.webp" alt="Suite Room 3">
+                </div>
+                <div class="spa-gallery-item">
+                    <img src="https://www.thepigs.org.uk/sites/default/files/2024-12/suite%204.webp" alt="Suite Room 4">
+                </div>
+                <div class="spa-gallery-item">
+                    <img src="https://www.thepigs.org.uk/sites/default/files/2025-01/Rectangle%2027.png" alt="Spa Treatment">
+                </div>
+                <div class="spa-gallery-item">
+                    <img src="https://www.thepigs.org.uk/sites/default/files/2024-11/spa-suite-room-half-2.webp" alt="Suite Courtyard">
+                </div>
+            </div>
+        </div>
+
+        <div class="spa-floorplan">
+            <h3>Spa Suite Layout</h3>
+            <img src="https://www.thepigs.org.uk/sites/default/files/2024-12/spa-suite-floorplan-new.png" alt="Spa Suite Floorplan">
+        </div>
+
+        <div class="spa-special-stay">
+            <h3>A Special Stay</h3>
+            <p>
+                Want to make your stay truly unforgettable? Book a table in our pub
+                for some delicious British dishes, or treat yourself to a PIGSPA treatment
+                to complete your relaxation experience.
+            </p>
+        </div>
+    </div>
+
+    <div class="spa-footer">
+        <h2>THE PIGS</h2>
+        <div class="spa-footer-info">
+            <p><strong>Open all day, every day from 8am</strong></p>
+            <p>Phone: 01263 587634</p>
+            <p>Norwich Rd, Edgefield, Melton Constable NR24 2RL</p>
+        </div>
+    </div>
+</div>
